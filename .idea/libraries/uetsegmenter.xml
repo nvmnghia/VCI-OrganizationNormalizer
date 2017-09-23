@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uetsegmenter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../UETsegmenter-master/uetsegmenter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
