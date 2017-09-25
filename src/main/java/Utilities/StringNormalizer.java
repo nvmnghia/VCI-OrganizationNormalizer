@@ -23,7 +23,7 @@ public class StringNormalizer {
             }
         }
 
-        return new String(out).replaceAll("\\s+", " ").trim();
+        return new String(out).replace('đ', 'd').replaceAll("\\s+", " ").trim();
     }
 
 }

@@ -1,7 +1,7 @@
 package Organization;
 
 public class Organization {
-    private String id;
+    private Integer id;
     private String name;
     private String nameEn;
     private String address;
@@ -9,12 +9,13 @@ public class Organization {
     private String rgt;
     private String parentID;
     private String fullName;
+    private Integer isVn;
 
     // Constructors
     public Organization() {
     }
 
-    public Organization(String id, String name, String nameEn, String address, String lft, String rgt, String parentID, String fullName) {
+    public Organization(Integer id, String name, String nameEn, String address, String lft, String rgt, String parentID, String fullName, Integer isVn) {
         this.id = id;
         this.name = name;
         this.nameEn = nameEn;
@@ -23,14 +24,15 @@ public class Organization {
         this.rgt = rgt;
         this.parentID = parentID;
         this.fullName = fullName;
+        this.isVn = isVn;
     }
 
     // Getters and Setters
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -89,4 +91,8 @@ public class Organization {
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
+
+    public Integer getIsVn() { return this.isVn; }
+
+    public void setIsVn(Integer isVn) { this.isVn = isVn; }
 }
