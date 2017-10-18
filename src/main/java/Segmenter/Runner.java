@@ -1,17 +1,14 @@
 package Segmenter;
 
+import Utl.StringNormalizer;
 import vn.edu.vnu.uet.nlp.segmenter.UETSegmenter;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.stream.Collectors;
 
-public class Main {
+public class Runner {
     private static ConcurrentHashMap<String, Integer> tokenizedWords = new ConcurrentHashMap<>();
-
     private static UETSegmenter segmenter = new UETSegmenter("D:\\VCI\\UETsegmenter-master\\models");
 
     public static void main(String[] args) {
@@ -48,10 +45,8 @@ public class Main {
 
         // Display
         for (Map.Entry<String, Integer> entry : listTokenizedWord) {
-            System.out.println(entry.getKey() + "    " + entry.getValue());
+            System.out.println(String.format("%5d    %s", entry.getValue(), entry.getKey()));
         }
-        System.out.println(listTokenizedWord.size());
+        System.out.println("Word count: " + listTokenizedWord.size());
     }
-
-
 }

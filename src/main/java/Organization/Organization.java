@@ -10,6 +10,8 @@ public class Organization {
     private String parentID;
     private String fullName;
 
+    private String url;
+
     // Constructors
     public Organization() {
     }
@@ -88,5 +90,13 @@ public class Organization {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

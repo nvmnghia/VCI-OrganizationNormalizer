@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="UETsegmenter-master" target="1.5" />
       <module name="VCI-OrganizationNormalizer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
